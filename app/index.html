@@ -2,12 +2,56 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	
+<div id="container">
+<!-- modal window -->
+<div class="modal">
+	<p></p>
+	<span class="close-modal">[X]</span>
+</div>
 
-	Hello I'm HTML!
+<!-- test -->
+<script type="text/template" id="test">
+	<form class="forma" id="testForm" action="#">
+		<h3 class="main-title">Тест по программированию</h3>
+		<h2 class="subtitle">Преобразование типов</h2>
+		
+		  <% for (var i = 0; i < data.length; i++) { %>
+		  <p class="list-title">Вопрос : <%= data[i].question_1 %> = ?</p>
+		  <ol>
+			  <li>
+			  	<label>
+						<input class="inputs" type="checkbox" name="test-check" value="one">
+						<%= data[i].variant_1 %>
+			  	</label>
+			  </li>
+			  <li>
+					<label>
+						<input class="inputs" type="checkbox" name="test-check" value="two">
+						<%= data[i].variant_2 %>
+					</label>
+			  </li>
+			  <li>
+					<label>
+						<input class="inputs" type="checkbox" name="test-check" value="three">
+						<%= data[i].variant_3 %>
+					</label>
+			  </li>
+			</ol>
+		  <% } %>
+	<input class="btnInput" type="submit" value="Проверить мои результаты">
+	</form>
+</script>
 
+
+</div><!-- end container -->
+
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/tmpl/tmpl.js"></script>
 <script src="js/common.js"></script>
+<script src="babel/script.js"></script>
 </body>
 </html>

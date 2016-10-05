@@ -2,8 +2,16 @@
 Unit tasts - Jasmine + phantom.js
 <p>Install:</p>
 <ol>
-	<li>npm i</li>
-	<li>npm install -g jasmine</li>
+	<li>
+		<pre>
+			<code>npm i</code>
+		</pre>
+	</li>
+	<li>
+		<pre>
+			<code>npm install -g jasmine</code>
+		</pre>
+	</li>
 </ol>
 <p>TAsk:</p>
 <ul>

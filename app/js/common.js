@@ -1,3 +1,5 @@
+/*first task*/
+
 var app = {
 	pow: function(x, n) {
 		var result = x;
@@ -9,4 +11,6 @@ var app = {
 
 }
 /*file to module*/
+try {
 module.exports = app;
+} catch(e) {}
